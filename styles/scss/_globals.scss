@@ -1,0 +1,26 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px !important;
+}
+
+body{
+    position: relative;
+    font-family: $ff-Arial;
+    background-color: $clr-eggshell;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+.center {
+    margin: 0 auto !important;
+}
