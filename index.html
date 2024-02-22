@@ -21,8 +21,7 @@
         <p class="recipe_insight">
           An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
           to perfection, optionally filled with your choice of cheese, vegetables, or meats.
-        </p>
-        
+        </p>     
 
         <section class="recipe_preparation">
           <h2>Preparation Time</h2>
@@ -44,12 +43,12 @@
           </ul>
         </section>
 
-        <hr>
+        <hr class="line-separator">
 
         <section class="recipe_instruction">
           <h2>Instructions</h2>
 
-          <ol>
+          <ol class="recipe_instruction--list">
             <li> <b>Beat the eggs:</b> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture.</li>
             <li> <b>Heat the pan:</b> Place a non-stick frying pan over medium heat and add butter or oil.</li>
             <li>
@@ -70,52 +69,97 @@
           </ol>
         </section>
 
+        <hr class="line-separator">
 
         <section class="recipe_nutrition">
           <h2>Nutrition</h2>
 
           <p>The table below shows nutritional values per serving without the additional fillings.</p>
 
-          <table class="recipe_nutrition">
-            <tr>
-              <td>Calories</td>
-              <td>277kcal</td>
-            </tr>
-          </table>
+          <div class="recipe_nutrition_table">
+            <div class="recipe_nutrition_table--row">
+                <div class="col1">
+                  Calories
+                </div> 
+                <div class="col2">
+                  277kcal
+                </div> 
+            </div>
+            <div class="recipe_nutrition_table--row">
+                <div class="col1">
+                  Carbs
+                </div> 
+                <div class="col2">
+                  0g
+                </div> 
+            </div>
+            <div class="recipe_nutrition_table--row">
+              <div class="col1">
+                Protein
+              </div> 
+              <div class="col2">
+                20g
+              </div> 
+            </div>
+            <div class="recipe_nutrition_table--row">
+              <div class="col1">
+                Fat
+              </div> 
+              <div class="col2">
+                22g
+              </div> 
+            </div>
         </section>
 
     </div>
   </div>
 
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
+  <script>
+
+    let data = {
+        "title":"Simple Omelete Recipe",
+        "description": "an easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats.",
+        "preparation": [
+          "<b>Total:</b> Approximately 10 minutes", 
+          "<b>Preparation:</b> 5 minutes", 
+          "<b>Cooking:</b> 5 minutes"
+        ],
+        "ingredients" : [
+          "2-3 large eggs",
+          "Salt, to taste",
+          "Pepper, to taste",
+          "1 tablespoon of butter or oil",
+          "Optional fillings: cheese, diced vegetables, cooked meats, herbs"
+        ],
+        "instruction": [
+          "<b>Beat the eggs:</b> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture.",
+          "<b>Heat the pan:</b> Place a non-stick frying pan over medium heat and add butter or oil.",
+          "<b>Cook the omelette:</b> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly coat the surface.",
+          "<b>Add fillings (optional):</b> When the eggs begin to set at the edges but are still slightly runny in the middle, sprinkle your chosen fillings over one half of the omelette.",
+          "<b>Fold and serve:</b> As the omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate.",
+          "<b>Enjoy:</b> Serve hot, with additional salt and pepper if needed."
+        ],
+        "nutrition" : [
+          { name: "Calories", amount: "277kcal" },
+          { name: "Carbs", amount: "0g" },
+          { name: "Protein", amount: "20g" },
+          { name: "Fat", amount: "22g" }    
+        ]
+    }
+
+    $(document).ready(() => {
+
+      console.log(data);
+    })
+  </script>
 </body>
 </html>
 
 
 <!-- 
 
-
-
-
-
-
-
-  
-
-  
-
-  
-  
-
-  Carbs
-  0g
-
-  Protein
-  20g
-
-  Fat
-  22g
-  
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
