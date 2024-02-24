@@ -15,31 +15,18 @@
     <div class="recipe">
       
         <img src="./assets/images/image-omelette.jpeg" class="recipe__image" alt="food">
-
-        <h2 class="recipe__title">Simple Omelette Recipe</h2>
-        
-        <p class="recipe_insight">
-          An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
-          to perfection, optionally filled with your choice of cheese, vegetables, or meats.
-        </p>     
+        <h2 class="recipe__title"></h2>
+        <p class="recipe_insight"></p>     
 
         <section class="recipe_preparation">
           <h2>Preparation Time</h2>
           <ul class="recipe_preparation--list">
-            <li> <b>Total:</b> Approximately 10 minutes</li>
-            <li> <b>Preparation:</b> 5 minutes</li>
-            <li> <b>Cooking:</b> 5 minutes</li>
           </ul>
         </section>
 
         <section class="recipe_ingredients">
           <h2>Ingredients</h2>
           <ul class="recipe_ingredients--list">
-            <li>2-3 large eggs</li>
-            <li>Salt, to taste</li>
-            <li>Pepper, to taste</li>
-            <li>1 tablespoon of butter or oil</li>
-            <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
           </ul>
         </section>
 
@@ -47,25 +34,7 @@
 
         <section class="recipe_instruction">
           <h2>Instructions</h2>
-
           <ol class="recipe_instruction--list">
-            <li> <b>Beat the eggs:</b> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture.</li>
-            <li> <b>Heat the pan:</b> Place a non-stick frying pan over medium heat and add butter or oil.</li>
-            <li>
-              <b>Cook the omelette:</b> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
-              the eggs evenly coat the surface.
-            </li>
-            <li>
-              <b>Add fillings (optional):</b> When the eggs begin to set at the edges but are still slightly runny in the 
-              middle, sprinkle your chosen fillings over one half of the omelette.
-            </li>
-            <li>
-              <b>Fold and serve:</b> As the omelette continues to cook, carefully lift one edge and fold it over the 
-              fillings. Let it cook for another minute, then slide it onto a plate.
-            </li>
-            <li>
-              <b>Enjoy:</b> Serve hot, with additional salt and pepper if needed.
-            </li>
           </ol>
         </section>
 
@@ -77,38 +46,7 @@
           <p>The table below shows nutritional values per serving without the additional fillings.</p>
 
           <div class="recipe_nutrition_table">
-            <div class="recipe_nutrition_table--row">
-                <div class="col1">
-                  Calories
-                </div> 
-                <div class="col2">
-                  277kcal
-                </div> 
-            </div>
-            <div class="recipe_nutrition_table--row">
-                <div class="col1">
-                  Carbs
-                </div> 
-                <div class="col2">
-                  0g
-                </div> 
-            </div>
-            <div class="recipe_nutrition_table--row">
-              <div class="col1">
-                Protein
-              </div> 
-              <div class="col2">
-                20g
-              </div> 
-            </div>
-            <div class="recipe_nutrition_table--row">
-              <div class="col1">
-                Fat
-              </div> 
-              <div class="col2">
-                22g
-              </div> 
-            </div>
+          </div>
         </section>
 
     </div>
@@ -119,39 +57,74 @@
   <script>
 
     let data = {
-        "title":"Simple Omelete Recipe",
-        "description": "an easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats.",
-        "preparation": [
-          "<b>Total:</b> Approximately 10 minutes", 
-          "<b>Preparation:</b> 5 minutes", 
-          "<b>Cooking:</b> 5 minutes"
-        ],
-        "ingredients" : [
-          "2-3 large eggs",
-          "Salt, to taste",
-          "Pepper, to taste",
-          "1 tablespoon of butter or oil",
-          "Optional fillings: cheese, diced vegetables, cooked meats, herbs"
-        ],
-        "instruction": [
-          "<b>Beat the eggs:</b> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture.",
-          "<b>Heat the pan:</b> Place a non-stick frying pan over medium heat and add butter or oil.",
-          "<b>Cook the omelette:</b> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly coat the surface.",
-          "<b>Add fillings (optional):</b> When the eggs begin to set at the edges but are still slightly runny in the middle, sprinkle your chosen fillings over one half of the omelette.",
-          "<b>Fold and serve:</b> As the omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate.",
-          "<b>Enjoy:</b> Serve hot, with additional salt and pepper if needed."
-        ],
-        "nutrition" : [
-          { name: "Calories", amount: "277kcal" },
-          { name: "Carbs", amount: "0g" },
-          { name: "Protein", amount: "20g" },
-          { name: "Fat", amount: "22g" }    
-        ]
+        "Simple Omelete Recipe": {
+          "description": "an easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats.",
+          "preparation": [
+            "<b>Total:</b> Approximately 10 minutes", 
+            "<b>Preparation:</b> 5 minutes", 
+            "<b>Cooking:</b> 5 minutes"
+          ],
+          "ingredients" : [
+            "2-3 large eggs",
+            "Salt, to taste",
+            "Pepper, to taste",
+            "1 tablespoon of butter or oil",
+            "Optional fillings: cheese, diced vegetables, cooked meats, herbs"
+          ],
+          "instruction": [
+            "<b>Beat the eggs:</b> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture.",
+            "<b>Heat the pan:</b> Place a non-stick frying pan over medium heat and add butter or oil.",
+            "<b>Cook the omelette:</b> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly coat the surface.",
+            "<b>Add fillings (optional):</b> When the eggs begin to set at the edges but are still slightly runny in the middle, sprinkle your chosen fillings over one half of the omelette.",
+            "<b>Fold and serve:</b> As the omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate.",
+            "<b>Enjoy:</b> Serve hot, with additional salt and pepper if needed."
+          ],
+          "nutrition" : [
+            { name: "Calories", amount: "277kcal" },
+            { name: "Carbs", amount: "0g" },
+            { name: "Protein", amount: "20g" },
+            { name: "Fat", amount: "22g" }    
+          ]
+        },
     }
 
     $(document).ready(() => {
 
-      console.log(data);
+      let recipeTitles = Object.keys(data);
+
+      $.each(data, function(title, data) {
+          $(".recipe__title").text(title);
+          $(".recipe_insight").text(data.description);
+
+          // preparation
+          let preparation = data.preparation;
+          $.each(preparation, function(index, step) {
+              $(".recipe_preparation--list").append("<li>" + step + "</li>");
+          });
+
+           // ingredients
+          let ingredients = data.ingredients;
+          $.each(ingredients, function(index, step) {
+              $(".recipe_ingredients--list").append("<li>" + step + "</li>");
+          });
+
+          // instruction
+          let instruction = data.instruction;
+          $.each(instruction, function(index, step) {
+              $(".recipe_instruction--list").append("<li>" + step + "</li>");
+          });
+
+          // nutrition
+          let nutrition = data.nutrition;
+          $.each(nutrition, function(index, nutrient) {
+              let newRow = '<div class="recipe_nutrition_table--row">' +
+                            '<div class="col1">' + nutrient.name + '</div>' +
+                            '<div class="col2">' + nutrient.amount + '</div>' +
+                          '</div>';
+              $(".recipe_nutrition_table").append(newRow);
+          });
+      });
+
     })
   </script>
 </body>
