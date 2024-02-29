@@ -8,3 +8,22 @@
 }
 
 @import "./recipe";
+
+
+
+.attribution{
+    border: 1px solid white;
+    position: absolute;
+    padding: 1rem;
+    bottom: 1rem;
+    background-color: rgb(241, 239, 239);
+    opacity: .76;
+
+    a{
+        color: black;
+
+        &:visited{
+            color: chocolate;
+        }
+    }
+}
